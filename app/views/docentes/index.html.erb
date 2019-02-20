@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h1>Docentes</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      <th>Nombre</th>
+      <th>Apellidopaterno</th>
+      <th>Apellidomaterno</th>
+      <th>Ci</th>
+      <th>Whatsapp</th>
+      <th>Telefonofijo</th>
+      <th>Sexo</th>
+      <th>Nacionalidad</th>
+      <th>Estado</th>
+      <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <% @docentes.each do |docente| %>
+        <tr>
+          <td><%= docente.nombre %></td>
+          <td><%= docente.apellidopaterno %></td>
+          <td><%= docente.apellidomaterno %></td>
+          <td><%= docente.ci %></td>
+          <td><%= docente.whatsapp %></td>
+          <td><%= docente.telefonofijo %></td>
+          <td><%= docente.area %></td>
+          <td><%= docente.sexo %></td>
+          <td><%= docente.nacionalidad %></td>
+          <td><%= docente.estado %></td>
+          <td><%= link_to 'Show', docente %></td>
+          <td><%= link_to 'Edit', edit_docente_path(docente) %></td>
+          <td><%= link_to 'Destroy', docente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Docente', new_docente_path %>

@@ -1570,3 +1570,221 @@ Processing by ParticipantesController#new as HTML
 Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+Migrating to CreateDocentes (20190220214405)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190220214405_create_docentes.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "docentes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "ci" varchar, "apellidopaterno" varchar, "apellidomaterno" varchar, "whatsapp" varchar, "telefonofijo" varchar, "area" varchar, "sexo" varchar, "nacionalidad" varchar, "profesion" varchar, "acercade" text, "referencias" varchar, "titulo" varchar, "lugardenacimiento" varchar, "estadocivil" varchar, "foto" varchar, "salarioporhora" float, "observaciones" text, "fechaingreso" date, "sueldobasico" float, "modalidadcontrato" varchar, "fechafinalizacion" date, "lunes" boolean, "martes" boolean, "miercoles" boolean, "jueves" boolean, "viernes" boolean, "sabado" boolean, "domingo" boolean, "horariodetrabajo" varchar, "horaspordia" integer, "formadepago" varchar, "nombrebanco" varchar, "cuentabancaria" varchar, "bonodetransporte" float, "bonodedesempeno" float, "bonodeantiguedad" float, "otrosbonos" float, "costoporhoraextra" float, "costoporhora" float, "facebook" varchar, "skype" varchar, "twitter" varchar, "linkedin" varchar, "medioatencion" varchar, "faseCRM" varchar, "urlcurriculum" varchar, "urlcontrato" varchar, "cuentasueldopp" integer, "cuentasueldopagado" integer, "cuentasueldoanticip" integer, "cuentaprevaguinaldo" integer, "cuentaporinformar" integer, "cuentaporcobrar" integer, "cuentaporpagar" integer, "cuentaliquidacion" integer, "cuentavacaciones" integer, "estado" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190220214405_create_docentes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190220214405"]]
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/bin/rake:22
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:46:03 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:71
+  Rendered docentes/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 1960ms (Views: 1906.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:49:06 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:72
+  Rendered docentes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 340ms (Views: 278.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-20 17:49:14 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (515.9ms)
+  Rendered docentes/new.html.erb within layouts/application (553.8ms)
+Completed 200 OK in 885ms (Views: 760.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/docentes" for 127.0.0.1 at 2019-02-20 17:49:18 -0400
+Processing by DocentesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0j7bDF4kT3l+8CF3VjHmFMHwjLuqik02UXBxQmmgG81HxLKJcivBhTue795wPj9AhWr6Q5XahYJbAlSkiCthJg==", "docente"=>{"nombre"=>"a", "ci"=>"", "apellidopaterno"=>"", "apellidomaterno"=>"", "whatsapp"=>"", "telefonofijo"=>"", "area"=>"", "sexo"=>"", "nacionalidad"=>"", "profesion"=>"", "acercade"=>"", "referencias"=>"", "titulo"=>"", "lugardenacimiento"=>"", "estadocivil"=>"", "foto"=>"", "salarioporhora"=>"", "observaciones"=>"", "fechaingreso(1i)"=>"2019", "fechaingreso(2i)"=>"2", "fechaingreso(3i)"=>"20", "sueldobasico"=>"", "modalidadcontrato"=>"", "fechafinalizacion(1i)"=>"2019", "fechafinalizacion(2i)"=>"2", "fechafinalizacion(3i)"=>"20", "lunes"=>"0", "martes"=>"0", "miercoles"=>"0", "jueves"=>"0", "viernes"=>"0", "sabado"=>"0", "domingo"=>"0", "horariodetrabajo"=>"", "horaspordia"=>"", "formadepago"=>"", "nombrebanco"=>"", "cuentabancaria"=>"", "bonodetransporte"=>"", "bonodedesempeno"=>"", "bonodeantiguedad"=>"", "otrosbonos"=>"", "costoporhoraextra"=>"", "costoporhora"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatencion"=>"", "faseCRM"=>"", "urlcurriculum"=>"", "urlcontrato"=>"", "cuentasueldopp"=>"", "cuentasueldopagado"=>"", "cuentasueldoanticip"=>"", "cuentaprevaguinaldo"=>"", "cuentaporinformar"=>"", "cuentaporcobrar"=>"", "cuentaporpagar"=>"", "cuentaliquidacion"=>"", "cuentavacaciones"=>"", "estado"=>"0"}, "commit"=>"Create Docente"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[36mDocente Create (3.2ms)[0m  [1m[32mINSERT INTO "docentes" ("nombre", "ci", "apellidopaterno", "apellidomaterno", "whatsapp", "telefonofijo", "area", "sexo", "nacionalidad", "profesion", "acercade", "referencias", "titulo", "lugardenacimiento", "estadocivil", "foto", "observaciones", "fechaingreso", "modalidadcontrato", "fechafinalizacion", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo", "horariodetrabajo", "formadepago", "nombrebanco", "cuentabancaria", "facebook", "skype", "twitter", "linkedin", "medioatencion", "faseCRM", "urlcurriculum", "urlcontrato", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "a"], ["ci", ""], ["apellidopaterno", ""], ["apellidomaterno", ""], ["whatsapp", ""], ["telefonofijo", ""], ["area", ""], ["sexo", ""], ["nacionalidad", ""], ["profesion", ""], ["acercade", ""], ["referencias", ""], ["titulo", ""], ["lugardenacimiento", ""], ["estadocivil", ""], ["foto", ""], ["observaciones", ""], ["fechaingreso", "2019-02-20"], ["modalidadcontrato", ""], ["fechafinalizacion", "2019-02-20"], ["lunes", 0], ["martes", 0], ["miercoles", 0], ["jueves", 0], ["viernes", 0], ["sabado", 0], ["domingo", 0], ["horariodetrabajo", ""], ["formadepago", ""], ["nombrebanco", ""], ["cuentabancaria", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatencion", ""], ["faseCRM", ""], ["urlcurriculum", ""], ["urlcontrato", ""], ["estado", 0], ["created_at", "2019-02-20 21:49:18.216527"], ["updated_at", "2019-02-20 21:49:18.216527"]]
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+Redirected to http://localhost:3000/docentes/1
+Completed 302 Found in 64ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/docentes/1" for 127.0.0.1 at 2019-02-20 17:49:18 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 384ms (Views: 329.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:49:27 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:72
+  Rendered docentes/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 284ms (Views: 246.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-20 17:49:33 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (41.2ms)
+  Rendered docentes/new.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 339ms (Views: 299.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/docentes" for 127.0.0.1 at 2019-02-20 17:49:39 -0400
+Processing by DocentesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FgDVkOpUG+p/qUVmkHVrLCH+KCadJ+vGdmJXzC/w332D+rwVxluVFjrHi8+2erJ4ZWRe3qJ3I3J8EHIqznullg==", "docente"=>{"nombre"=>"asasas", "ci"=>"", "apellidopaterno"=>"", "apellidomaterno"=>"", "whatsapp"=>"", "telefonofijo"=>"", "area"=>"", "sexo"=>"", "nacionalidad"=>"", "profesion"=>"", "acercade"=>"", "referencias"=>"", "titulo"=>"", "lugardenacimiento"=>"", "estadocivil"=>"", "foto"=>"", "salarioporhora"=>"", "observaciones"=>"", "fechaingreso(1i)"=>"2019", "fechaingreso(2i)"=>"2", "fechaingreso(3i)"=>"20", "sueldobasico"=>"", "modalidadcontrato"=>"", "fechafinalizacion(1i)"=>"2019", "fechafinalizacion(2i)"=>"2", "fechafinalizacion(3i)"=>"20", "lunes"=>"0", "martes"=>"0", "miercoles"=>"0", "jueves"=>"0", "viernes"=>"0", "sabado"=>"0", "domingo"=>"0", "horariodetrabajo"=>"", "horaspordia"=>"", "formadepago"=>"", "nombrebanco"=>"", "cuentabancaria"=>"", "bonodetransporte"=>"", "bonodedesempeno"=>"", "bonodeantiguedad"=>"", "otrosbonos"=>"", "costoporhoraextra"=>"", "costoporhora"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatencion"=>"", "faseCRM"=>"", "urlcurriculum"=>"", "urlcontrato"=>"", "cuentasueldopp"=>"", "cuentasueldopagado"=>"", "cuentasueldoanticip"=>"", "cuentaprevaguinaldo"=>"", "cuentaporinformar"=>"", "cuentaporcobrar"=>"", "cuentaporpagar"=>"", "cuentaliquidacion"=>"", "cuentavacaciones"=>"", "estado"=>"0"}, "commit"=>"Create Docente"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[36mDocente Create (1.4ms)[0m  [1m[32mINSERT INTO "docentes" ("nombre", "ci", "apellidopaterno", "apellidomaterno", "whatsapp", "telefonofijo", "area", "sexo", "nacionalidad", "profesion", "acercade", "referencias", "titulo", "lugardenacimiento", "estadocivil", "foto", "observaciones", "fechaingreso", "modalidadcontrato", "fechafinalizacion", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo", "horariodetrabajo", "formadepago", "nombrebanco", "cuentabancaria", "facebook", "skype", "twitter", "linkedin", "medioatencion", "faseCRM", "urlcurriculum", "urlcontrato", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "asasas"], ["ci", ""], ["apellidopaterno", ""], ["apellidomaterno", ""], ["whatsapp", ""], ["telefonofijo", ""], ["area", ""], ["sexo", ""], ["nacionalidad", ""], ["profesion", ""], ["acercade", ""], ["referencias", ""], ["titulo", ""], ["lugardenacimiento", ""], ["estadocivil", ""], ["foto", ""], ["observaciones", ""], ["fechaingreso", "2019-02-20"], ["modalidadcontrato", ""], ["fechafinalizacion", "2019-02-20"], ["lunes", 0], ["martes", 0], ["miercoles", 0], ["jueves", 0], ["viernes", 0], ["sabado", 0], ["domingo", 0], ["horariodetrabajo", ""], ["formadepago", ""], ["nombrebanco", ""], ["cuentabancaria", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatencion", ""], ["faseCRM", ""], ["urlcurriculum", ""], ["urlcontrato", ""], ["estado", 0], ["created_at", "2019-02-20 21:49:39.174732"], ["updated_at", "2019-02-20 21:49:39.174732"]]
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+Redirected to http://localhost:3000/docentes/2
+Completed 302 Found in 77ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/docentes/2" for 127.0.0.1 at 2019-02-20 17:49:39 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDocente Load (0.3ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 281ms (Views: 228.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:49:44 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.9ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:72
+  Rendered docentes/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 282ms (Views: 246.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:52:51 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (1.0ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:23
+  Rendered docentes/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 228ms (Views: 194.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:53:58 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 239ms (Views: 190.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:54:24 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 284ms (Views: 219.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 17:54:31 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 226ms (Views: 179.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-20 17:54:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 324ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-20 17:54:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 301ms (Views: 260.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-20 17:54:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 242ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuestas" for 127.0.0.1 at 2019-02-20 17:55:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/propuestas"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/propuesta" for 127.0.0.1 at 2019-02-20 17:55:51 -0400
+Processing by PropuestaController#index as HTML
+  Rendering propuesta/index.html.erb within layouts/application
+  [1m[36mPropuestum Load (0.7ms)[0m  [1m[34mSELECT "propuesta".* FROM "propuesta"[0m
+  ↳ app/views/propuesta/index.html.erb:36
+  Rendered propuesta/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 277ms (Views: 195.6ms | ActiveRecord: 1.7ms)
+
+
