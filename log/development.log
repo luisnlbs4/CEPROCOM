@@ -1013,3 +1013,560 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-20 09:43:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 112ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateParticipantes (20190220160307)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateParticipantes (20190220160307)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190220160307_create_participantes.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "participantes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "ci" varchar, "nombre" varchar, "apellidoP" varchar, "apellidoM" varchar, "numWpp" varchar, "numFijo" varchar, "direccion" varchar, "fecNacimiento" varchar, "latitud" varchar, "longitud" varchar, "nit" varchar, "empresa" varchar, "teloficina" varchar, "rubro" varchar, "email" varchar, "cargo" varchar, "sexo" varchar, "nacionalidad" varchar, "professor" varchar, "categoria" varchar, "ciudad" varchar, "pais" varchar, "sitioweb" varchar, "facebook" varchar, "skype" varchar, "twitter" varchar, "linkedin" varchar, "medioatecion" varchar, "faseCRM" varchar, "responsable" varchar, "observaciones" text, "password" varchar, "estado" varchar, "foto" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190220160307_create_participantes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190220160307"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:05:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:48
+  Rendered participantes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 388ms (Views: 356.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:09:03 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes/new" for 127.0.0.1 at 2019-02-20 12:09:05 -0400
+Processing by ParticipantesController#new as HTML
+  Rendering participantes/new.html.erb within layouts/application
+  Rendered participantes/_form.html.erb (51.1ms)
+  Rendered participantes/new.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 134ms (Views: 89.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/participantes" for 127.0.0.1 at 2019-02-20 12:09:59 -0400
+Processing by ParticipantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RjBcTHRAu2+nfK4ORxNx+yE9FwHLswBwg+JI/7O/uR59VtN/OYUUc3hwzfQXRgr0Qy24LDCw2K4640OF8yQEA==", "participante"=>{"ci"=>"82982983", "nombre"=>"luis", "apellidoP"=>"akjnsdkjasn", "apellidoM"=>"skjdnfkjsd", "numWpp"=>"888888888", "numFijo"=>"88888888", "direccion"=>"av. ayacucho", "fecNacimiento"=>"11/11/95", "latitud"=>"", "longitud"=>"", "nit"=>"", "empresa"=>"", "teloficina"=>"", "rubro"=>"", "email"=>"", "cargo"=>"", "sexo"=>"", "nacionalidad"=>"", "professor"=>"", "categoria"=>"", "ciudad"=>"", "pais"=>"", "sitioweb"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatecion"=>"", "faseCRM"=>"", "responsable"=>"", "observaciones"=>"", "password"=>"[FILTERED]", "estado"=>"", "foto"=>""}, "commit"=>"Create Participante"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[36mParticipante Create (1.0ms)[0m  [1m[32mINSERT INTO "participantes" ("ci", "nombre", "apellidoP", "apellidoM", "numWpp", "numFijo", "direccion", "fecNacimiento", "latitud", "longitud", "nit", "empresa", "teloficina", "rubro", "email", "cargo", "sexo", "nacionalidad", "professor", "categoria", "ciudad", "pais", "sitioweb", "facebook", "skype", "twitter", "linkedin", "medioatecion", "faseCRM", "responsable", "observaciones", "password", "estado", "foto", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ci", "82982983"], ["nombre", "luis"], ["apellidoP", "akjnsdkjasn"], ["apellidoM", "skjdnfkjsd"], ["numWpp", "888888888"], ["numFijo", "88888888"], ["direccion", "av. ayacucho"], ["fecNacimiento", "11/11/95"], ["latitud", ""], ["longitud", ""], ["nit", ""], ["empresa", ""], ["teloficina", ""], ["rubro", ""], ["email", ""], ["cargo", ""], ["sexo", ""], ["nacionalidad", ""], ["professor", ""], ["categoria", ""], ["ciudad", ""], ["pais", ""], ["sitioweb", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatecion", ""], ["faseCRM", ""], ["responsable", ""], ["observaciones", ""], ["password", ""], ["estado", ""], ["foto", ""], ["created_at", "2019-02-20 16:09:59.785497"], ["updated_at", "2019-02-20 16:09:59.785497"]]
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+Redirected to http://localhost:3000/participantes/1
+Completed 302 Found in 12ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/participantes/1" for 127.0.0.1 at 2019-02-20 12:09:59 -0400
+Processing by ParticipantesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT  "participantes".* FROM "participantes" WHERE "participantes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/participantes_controller.rb:67
+  Rendering participantes/show.html.erb within layouts/application
+  Rendered participantes/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:10:03 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes/1" for 127.0.0.1 at 2019-02-20 12:10:08 -0400
+Processing by ParticipantesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mParticipante Load (0.1ms)[0m  [1m[34mSELECT  "participantes".* FROM "participantes" WHERE "participantes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/participantes_controller.rb:67
+  Rendering participantes/show.html.erb within layouts/application
+  Rendered participantes/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:10:27 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.5ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:20 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:41 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:41 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:41 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:41 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:12:44 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:13:05 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:13:16 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:13:48 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:13:53 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:18
+  Rendered participantes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:14:05 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:14:12 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:15:08 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:15:16 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:15:33 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:15:40 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:15:47 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:16:04 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:16:04 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes/new" for 127.0.0.1 at 2019-02-20 12:16:18 -0400
+Processing by ParticipantesController#new as HTML
+  Rendering participantes/new.html.erb within layouts/application
+  Rendered participantes/_form.html.erb (14.3ms)
+  Rendered participantes/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/participantes" for 127.0.0.1 at 2019-02-20 12:16:38 -0400
+Processing by ParticipantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U8d+XRZ+9Dm75jvxF1idRZcyLoVzw+D5dWZWbTST4ebbKuRh20nihciaCn7+GcipqrpsOcQv75oPglJA3ZGPEg==", "participante"=>{"ci"=>"18231923123", "nombre"=>"juan  Carlos", "apellidoP"=>"iudsnfiuds", "apellidoM"=>"idsnfiusdn", "numWpp"=>"829382938", "numFijo"=>"29832389", "direccion"=>"nsjkdfn", "fecNacimiento"=>"", "latitud"=>"", "longitud"=>"", "nit"=>"", "empresa"=>"", "teloficina"=>"", "rubro"=>"", "email"=>"", "cargo"=>"", "sexo"=>"", "nacionalidad"=>"", "professor"=>"", "categoria"=>"", "ciudad"=>"", "pais"=>"", "sitioweb"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatecion"=>"", "faseCRM"=>"", "responsable"=>"", "observaciones"=>"", "password"=>"[FILTERED]", "estado"=>"", "foto"=>""}, "commit"=>"Create Participante"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[36mParticipante Create (0.5ms)[0m  [1m[32mINSERT INTO "participantes" ("ci", "nombre", "apellidoP", "apellidoM", "numWpp", "numFijo", "direccion", "fecNacimiento", "latitud", "longitud", "nit", "empresa", "teloficina", "rubro", "email", "cargo", "sexo", "nacionalidad", "professor", "categoria", "ciudad", "pais", "sitioweb", "facebook", "skype", "twitter", "linkedin", "medioatecion", "faseCRM", "responsable", "observaciones", "password", "estado", "foto", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ci", "18231923123"], ["nombre", "juan  Carlos"], ["apellidoP", "iudsnfiuds"], ["apellidoM", "idsnfiusdn"], ["numWpp", "829382938"], ["numFijo", "29832389"], ["direccion", "nsjkdfn"], ["fecNacimiento", ""], ["latitud", ""], ["longitud", ""], ["nit", ""], ["empresa", ""], ["teloficina", ""], ["rubro", ""], ["email", ""], ["cargo", ""], ["sexo", ""], ["nacionalidad", ""], ["professor", ""], ["categoria", ""], ["ciudad", ""], ["pais", ""], ["sitioweb", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatecion", ""], ["faseCRM", ""], ["responsable", ""], ["observaciones", ""], ["password", ""], ["estado", ""], ["foto", ""], ["created_at", "2019-02-20 16:16:38.036232"], ["updated_at", "2019-02-20 16:16:38.036232"]]
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+Redirected to http://localhost:3000/participantes/2
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/participantes/2" for 127.0.0.1 at 2019-02-20 12:16:38 -0400
+Processing by ParticipantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mParticipante Load (0.1ms)[0m  [1m[34mSELECT  "participantes".* FROM "participantes" WHERE "participantes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/participantes_controller.rb:67
+  Rendering participantes/show.html.erb within layouts/application
+  Rendered participantes/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:16:40 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes/new" for 127.0.0.1 at 2019-02-20 12:16:46 -0400
+Processing by ParticipantesController#new as HTML
+  Rendering participantes/new.html.erb within layouts/application
+  Rendered participantes/_form.html.erb (14.7ms)
+  Rendered participantes/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/participantes" for 127.0.0.1 at 2019-02-20 12:17:06 -0400
+Processing by ParticipantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AuIn7+yUkwrm9oAhfd21/U2lnwPTf/PKkK9QrOycsNqKD73TIaOFtpWKsa6UnOARcC3dv2ST/KnqS1SBBZ7eLg==", "participante"=>{"ci"=>"29392831", "nombre"=>"vitter", "apellidoP"=>"dsdnfsdkjfn", "apellidoM"=>"skjdnfgskjn", "numWpp"=>"293829389", "numFijo"=>"34343i4u3", "direccion"=>"sjdnkjsdnfksd", "fecNacimiento"=>"sdsjdnfksjn", "latitud"=>"", "longitud"=>"", "nit"=>"", "empresa"=>"", "teloficina"=>"", "rubro"=>"", "email"=>"", "cargo"=>"", "sexo"=>"", "nacionalidad"=>"", "professor"=>"", "categoria"=>"", "ciudad"=>"", "pais"=>"", "sitioweb"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatecion"=>"", "faseCRM"=>"", "responsable"=>"", "observaciones"=>"", "password"=>"[FILTERED]", "estado"=>"", "foto"=>""}, "commit"=>"Create Participante"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[36mParticipante Create (0.5ms)[0m  [1m[32mINSERT INTO "participantes" ("ci", "nombre", "apellidoP", "apellidoM", "numWpp", "numFijo", "direccion", "fecNacimiento", "latitud", "longitud", "nit", "empresa", "teloficina", "rubro", "email", "cargo", "sexo", "nacionalidad", "professor", "categoria", "ciudad", "pais", "sitioweb", "facebook", "skype", "twitter", "linkedin", "medioatecion", "faseCRM", "responsable", "observaciones", "password", "estado", "foto", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ci", "29392831"], ["nombre", "vitter"], ["apellidoP", "dsdnfsdkjfn"], ["apellidoM", "skjdnfgskjn"], ["numWpp", "293829389"], ["numFijo", "34343i4u3"], ["direccion", "sjdnkjsdnfksd"], ["fecNacimiento", "sdsjdnfksjn"], ["latitud", ""], ["longitud", ""], ["nit", ""], ["empresa", ""], ["teloficina", ""], ["rubro", ""], ["email", ""], ["cargo", ""], ["sexo", ""], ["nacionalidad", ""], ["professor", ""], ["categoria", ""], ["ciudad", ""], ["pais", ""], ["sitioweb", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatecion", ""], ["faseCRM", ""], ["responsable", ""], ["observaciones", ""], ["password", ""], ["estado", ""], ["foto", ""], ["created_at", "2019-02-20 16:17:06.780977"], ["updated_at", "2019-02-20 16:17:06.780977"]]
+  ↳ app/controllers/participantes_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/participantes_controller.rb:30
+Redirected to http://localhost:3000/participantes/3
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/participantes/3" for 127.0.0.1 at 2019-02-20 12:17:06 -0400
+Processing by ParticipantesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParticipante Load (0.2ms)[0m  [1m[34mSELECT  "participantes".* FROM "participantes" WHERE "participantes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/participantes_controller.rb:67
+  Rendering participantes/show.html.erb within layouts/application
+  Rendered participantes/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:17:09 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:17:25 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:17:25 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:17:26 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:17:26 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:18:07 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.5ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:18:14 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:18:19 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:18:31 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:18:32 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:19
+  Rendered participantes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:21:03 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  Rendered participantes/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/macuser/Documents/Ceprocom/app/views/participantes/index.html.erb:34: syntax error, unexpected keyword_end
+       end 
+          ^
+/Users/macuser/Documents/Ceprocom/app/views/participantes/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/macuser/Documents/Ceprocom/app/views/participantes/index.html.erb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/participantes/index.html.erb:34: syntax error, unexpected keyword_end
+app/views/participantes/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/participantes/index.html.erb:46: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:21:19 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (7.7ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 41ms (Views: 31.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:21:25 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.5ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:22:50 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:23:01 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:23:13 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.4ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participantes/new" for 127.0.0.1 at 2019-02-20 12:23:35 -0400
+Processing by ParticipantesController#new as HTML
+  Rendering participantes/new.html.erb within layouts/application
+  Rendered participantes/_form.html.erb (15.2ms)
+  Rendered participantes/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/participantes/2" for 127.0.0.1 at 2019-02-20 12:23:43 -0400
+Processing by ParticipantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXzxtwy7oZM0hUfPrG0XqrR99d8iWFPVJGZE+dwFncV2byfCljdmFWP0rlJN5VG+QnlRrwcg2QnpcY8ALmNOtA==", "id"=>"2"}
+  [1m[36mParticipante Load (0.2ms)[0m  [1m[34mSELECT  "participantes".* FROM "participantes" WHERE "participantes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/participantes_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/participantes_controller.rb:57
+  [1m[36mParticipante Destroy (0.4ms)[0m  [1m[31mDELETE FROM "participantes" WHERE "participantes"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/participantes_controller.rb:57
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/participantes_controller.rb:57
+Redirected to http://localhost:3000/participantes
+Completed 302 Found in 11ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:23:43 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.5ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participantes" for 127.0.0.1 at 2019-02-20 12:23:48 -0400
+Processing by ParticipantesController#index as HTML
+  Rendering participantes/index.html.erb within layouts/application
+  [1m[36mParticipante Load (0.3ms)[0m  [1m[34mSELECT "participantes".* FROM "participantes"[0m
+  ↳ app/views/participantes/index.html.erb:21
+  Rendered participantes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participantes/new" for 127.0.0.1 at 2019-02-20 12:24:49 -0400
+Processing by ParticipantesController#new as HTML
+  Rendering participantes/new.html.erb within layouts/application
+  Rendered participantes/_form.html.erb (15.0ms)
+  Rendered participantes/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+

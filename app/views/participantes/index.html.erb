@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="container jumbotron">
+  <h2 class="text-center">Participantes</h2>
+  <hr>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>CI</th>
+        <th>Nombre</th>
+        <th>Ap. Paterno</th>
+        <th>Ap. Materno</th>
+        <th>WhatsApp</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contador= 1 %>
+      <% @participantes.each do |participante| %>
+        <tr>
+          <td><%= @contador %></td>
+          <td><%= participante.ci %></td>
+          <td><%= participante.nombre %></td>
+          <td><%= participante.apellidoP %></td>
+          <td><%= participante.apellidoM %></td>
+          <td><%= participante.numWpp %></td>
+          <td><%= link_to 'Show', participante , class: "btn btn-primary btn-sm" %>
+          <%= link_to 'Edit', edit_participante_path(participante) ,class: "btn btn-warning btn-sm" %>
+          <%= link_to 'Destroy', participante,class: "btn btn-danger btn-sm" , method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% @contador= @contador+1 %>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'New Participante', new_participante_path,class: "btn btn-success" %>
+</div>
+
+<br>

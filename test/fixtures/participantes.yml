@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ci: MyString
+  nombre: MyString
+  apellidoP: MyString
+  apellidoM: MyString
+  numWpp: MyString
+  numFijo: MyString
+  direccion: MyString
+  fecNacimiento: MyString
+  latitud: MyString
+  longitud: MyString
+  nit: MyString
+  empresa: MyString
+  teloficina: MyString
+  rubro: MyString
+  email: MyString
+  cargo: MyString
+  sexo: MyString
+  nacionalidad: MyString
+  professor: MyString
+  categoria: MyString
+  ciudad: MyString
+  pais: MyString
+  sitioweb: MyString
+  facebook: MyString
+  skype: MyString
+  twitter: MyString
+  linkedin: MyString
+  medioatecion: MyString
+  faseCRM: 
+  responsable: MyString
+  observaciones: MyText
+  email: MyString
+  password: MyString
+  estado: MyString
+  foto: MyString
+
+two:
+  ci: MyString
+  nombre: MyString
+  apellidoP: MyString
+  apellidoM: MyString
+  numWpp: MyString
+  numFijo: MyString
+  direccion: MyString
+  fecNacimiento: MyString
+  latitud: MyString
+  longitud: MyString
+  nit: MyString
+  empresa: MyString
+  teloficina: MyString
+  rubro: MyString
+  email: MyString
+  cargo: MyString
+  sexo: MyString
+  nacionalidad: MyString
+  professor: MyString
+  categoria: MyString
+  ciudad: MyString
+  pais: MyString
+  sitioweb: MyString
+  facebook: MyString
+  skype: MyString
+  twitter: MyString
+  linkedin: MyString
+  medioatecion: MyString
+  faseCRM: 
+  responsable: MyString
+  observaciones: MyText
+  email: MyString
+  password: MyString
+  estado: MyString
+  foto: MyString

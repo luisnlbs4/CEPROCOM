@@ -1,0 +1,192 @@
+<%= form_with(model: participante, local: true) do |form| %>
+  <% if participante.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(participante.errors.count, "error") %> prohibited this participante from being saved:</h2>
+
+      <ul>
+      <% participante.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ci %>
+    <%= form.text_field :ci %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apellidoP %>
+    <%= form.text_field :apellidoP %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apellidoM %>
+    <%= form.text_field :apellidoM %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numWpp %>
+    <%= form.text_field :numWpp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numFijo %>
+    <%= form.text_field :numFijo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direccion %>
+    <%= form.text_field :direccion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecNacimiento %>
+    <%= form.text_field :fecNacimiento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitud %>
+    <%= form.text_field :latitud %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitud %>
+    <%= form.text_field :longitud %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nit %>
+    <%= form.text_field :nit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :empresa %>
+    <%= form.text_field :empresa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teloficina %>
+    <%= form.text_field :teloficina %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rubro %>
+    <%= form.text_field :rubro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cargo %>
+    <%= form.text_field :cargo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexo %>
+    <%= form.text_field :sexo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionalidad %>
+    <%= form.text_field :nacionalidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :professor %>
+    <%= form.text_field :professor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ciudad %>
+    <%= form.text_field :ciudad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pais %>
+    <%= form.text_field :pais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sitioweb %>
+    <%= form.text_field :sitioweb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook %>
+    <%= form.text_field :facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skype %>
+    <%= form.text_field :skype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twitter %>
+    <%= form.text_field :twitter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :linkedin %>
+    <%= form.text_field :linkedin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :medioatecion %>
+    <%= form.text_field :medioatecion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faseCRM %>
+    <%= form.text_field :faseCRM %>
+  </div>
+
+  <div class="field">
+    <%= form.label :responsable %>
+    <%= form.text_field :responsable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observaciones %>
+    <%= form.text_area :observaciones %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_field :foto %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

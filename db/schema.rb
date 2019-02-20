@@ -10,7 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_19_142030) do
+ActiveRecord::Schema.define(version: 2019_02_20_160307) do
+
+  create_table "participantes", force: :cascade do |t|
+    t.string "ci"
+    t.string "nombre"
+    t.string "apellidoP"
+    t.string "apellidoM"
+    t.string "numWpp"
+    t.string "numFijo"
+    t.string "direccion"
+    t.string "fecNacimiento"
+    t.string "latitud"
+    t.string "longitud"
+    t.string "nit"
+    t.string "empresa"
+    t.string "teloficina"
+    t.string "rubro"
+    t.string "email"
+    t.string "cargo"
+    t.string "sexo"
+    t.string "nacionalidad"
+    t.string "professor"
+    t.string "categoria"
+    t.string "ciudad"
+    t.string "pais"
+    t.string "sitioweb"
+    t.string "facebook"
+    t.string "skype"
+    t.string "twitter"
+    t.string "linkedin"
+    t.string "medioatecion"
+    t.string "faseCRM"
+    t.string "responsable"
+    t.text "observaciones"
+    t.string "password"
+    t.string "estado"
+    t.string "foto"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "propuesta", force: :cascade do |t|
     t.string "email"
