@@ -85,3 +85,931 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 69ms (Views: 57.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:46:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 264ms (Views: 243.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:56:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:56:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:56:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:57:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:57:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:57:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 09:57:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreatePropuesta (20190219141013)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "propuesta" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "nombre" varchar, "acerca" text, "wpp" varchar, "titulo" varchar, "descripcion" text, "tema1" text, "tema2" text, "tema3" text, "tema4" text, "tema5" text, "tema6" text, "tema7" text, "tema8" text, "tema10" text, "dirigidoA" varchar, "fechas" varchar, "horarios" varchar, "duracion" varchar, "incluira" varchar, "materiales" varchar, "curriculum" varchar, "acuerdo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190219141013_create_propuesta.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190219141013"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-19 14:11:06.749550"], ["updated_at", "2019-02-19 14:11:06.749550"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/propuestas" for 127.0.0.1 at 2019-02-19 10:11:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/propuestas"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/propuesta" for 127.0.0.1 at 2019-02-19 10:11:20 -0400
+Processing by PropuestaController#index as HTML
+  Rendering propuesta/index.html.erb within layouts/application
+  [1m[36mPropuestum Load (0.2ms)[0m  [1m[34mSELECT "propuesta".* FROM "propuesta"[0m
+  ↳ app/views/propuesta/index.html.erb:36
+  Rendered propuesta/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 345ms (Views: 338.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:11:27 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (26.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 88ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:14:41 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddTemaToPropuesta (20190219142030)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "propuesta" ADD "tema9" text[0m
+  ↳ db/migrate/20190219142030_add_tema_to_propuesta.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190219142030"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:24:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (21.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 306ms (Views: 241.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:26:07 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.8ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:27:07 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:27:22 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:27:33 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (33.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:27:33 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:27:34 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:30:07 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 10:30:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:15 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (13.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:16 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (14.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:45 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:46 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:46 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:46 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:31:46 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.8ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:16 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (13.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 48ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:21 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:21 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:32:21 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:34:59 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:11 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:12 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:13 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:13 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:23 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:24 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:24 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:24 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 53ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:35:40 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:36:05 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:37:19 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:37:49 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:38:13 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (16.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:38:24 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:38:32 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:39:01 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.8ms)
+  Rendered propuesta/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:40:37 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:41:33 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:41:54 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:42:14 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:42:15 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:42:15 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:42:15 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:42:33 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:43:13 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:44:17 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:44:26 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:44:35 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:45:10 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.8ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:45:10 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:45:10 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:45:10 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (12.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 66ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:45:15 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:50:52 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:51:42 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:58:40 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:58:40 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:58:41 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:58:41 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (13.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:58:41 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:24 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:48 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:49 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:49 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:49 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:55 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:56 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:56 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 10:59:56 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:04 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:04 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:04 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (15.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:04 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (7.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:05 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:00:52 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:01:01 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.5ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:01:36 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:04:53 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:05:09 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (8.9ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:05:32 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.8ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:05:43 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:05:53 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.2ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:06:04 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:06:13 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.1ms)
+  Rendered propuesta/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:06:37 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (9.4ms)
+  Rendered propuesta/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:08:31 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (10.0ms)
+  Rendered propuesta/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:22:32 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (14.3ms)
+  Rendered propuesta/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 78ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:22:35 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (11.6ms)
+  Rendered propuesta/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/propuesta/new" for 127.0.0.1 at 2019-02-19 11:22:40 -0400
+Processing by PropuestaController#new as HTML
+  Rendering propuesta/new.html.erb within layouts/application
+  Rendered propuesta/_form.html.erb (13.7ms)
+  Rendered propuesta/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 11:24:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+

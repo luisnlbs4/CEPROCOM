@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  nombre: MyString
+  acerca: MyText
+  wpp: MyString
+  titulo: MyString
+  descripcion: MyText
+  tema1: MyText
+  tema2: MyText
+  tema3: MyText
+  tema4: MyText
+  tema5: MyText
+  tema6: MyText
+  tema7: MyText
+  tema8: MyText
+  tema10: MyText
+  dirigidoA: MyString
+  fechas: MyString
+  horarios: MyString
+  duracion: MyString
+  incluira: MyString
+  materiales: MyString
+  curriculum: MyString
+  acuerdo: MyString
+
+two:
+  email: MyString
+  nombre: MyString
+  acerca: MyText
+  wpp: MyString
+  titulo: MyString
+  descripcion: MyText
+  tema1: MyText
+  tema2: MyText
+  tema3: MyText
+  tema4: MyText
+  tema5: MyText
+  tema6: MyText
+  tema7: MyText
+  tema8: MyText
+  tema10: MyText
+  dirigidoA: MyString
+  fechas: MyString
+  horarios: MyString
+  duracion: MyString
+  incluira: MyString
+  materiales: MyString
+  curriculum: MyString
+  acuerdo: MyString

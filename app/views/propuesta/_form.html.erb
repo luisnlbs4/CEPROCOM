@@ -1,0 +1,114 @@
+<%= form_with(model: propuestum, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acerca %>
+    <%= form.text_area :acerca %>
+  </div>
+  <div class="field">
+    <%= form.label :wpp %>
+    <%= form.text_field :wpp %>
+  </div>
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= form.label :tema1 %>
+    <%= form.text_area :tema1 %>
+  </div>
+  <div class="field">
+    <%= form.label :tema2 %>
+    <%= form.text_area :tema2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema3 %>
+    <%= form.text_area :tema3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema4 %>
+    <%= form.text_area :tema4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema5 %>
+    <%= form.text_area :tema5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema6 %>
+    <%= form.text_area :tema6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema7 %>
+    <%= form.text_area :tema7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema8 %>
+    <%= form.text_area :tema8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema10 %>
+    <%= form.text_area :tema10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dirigidoA %>
+    <%= form.text_field :dirigidoA %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fechas %>
+    <%= form.text_field :fechas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :horarios %>
+    <%= form.text_field :horarios %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duracion %>
+    <%= form.text_field :duracion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incluira %>
+    <%= form.text_field :incluira %>
+  </div>
+
+  <div class="field">
+    <%= form.label :materiales %>
+    <%= form.text_field :materiales %>
+  </div>
+
+  <div class="field">
+    <%= form.label :curriculum %>
+    <%= form.text_field :curriculum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acuerdo %>
+    <%= form.text_field :acuerdo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
