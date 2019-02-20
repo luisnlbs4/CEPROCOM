@@ -1788,3 +1788,259 @@ Processing by PropuestaController#index as HTML
 Completed 200 OK in 277ms (Views: 195.6ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:07:05 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (96.3ms)
+Completed 200 OK in 1147ms (Views: 1091.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:08:04 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 229ms (Views: 196.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:08:07 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 239ms (Views: 194.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:08:08 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 263ms (Views: 220.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:09:16 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.9ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 266ms (Views: 213.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:09:20 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 238ms (Views: 192.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:09:38 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.4ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (64.4ms)
+Completed 200 OK in 529ms (Views: 484.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:16:53 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 238ms (Views: 174.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:16:57 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 207ms (Views: 170.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:16:58 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 192ms (Views: 160.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:16:59 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 249ms (Views: 209.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:16:59 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 207ms (Views: 163.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:17:00 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.4ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 198ms (Views: 161.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:17:01 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 298ms (Views: 212.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:17:37 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:22
+  Rendered docentes/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 225ms (Views: 192.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:21:11 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:36
+  Rendered docentes/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 281ms (Views: 208.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:21:14 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:36
+  Rendered docentes/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 283ms (Views: 237.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:21:15 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:36
+  Rendered docentes/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 260ms (Views: 219.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:21:16 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:36
+  Rendered docentes/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 273ms (Views: 223.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:21:17 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (1.1ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:36
+  Rendered docentes/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 245ms (Views: 200.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:22:37 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.9ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:39
+  Rendered docentes/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 250ms (Views: 207.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:23:31 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.9ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:39
+  Rendered docentes/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 269ms (Views: 225.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:26:36 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:40
+  Rendered docentes/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 237ms (Views: 197.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:28:03 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:40
+  Rendered docentes/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 243ms (Views: 195.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:28:13 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 250ms (Views: 197.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:28:53 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 255ms (Views: 216.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:30:40 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 321ms (Views: 240.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-20 18:32:57 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 338ms (Views: 264.9ms | ActiveRecord: 0.6ms)
+
+

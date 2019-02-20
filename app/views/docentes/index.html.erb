@@ -1,7 +1,26 @@
 <p id="notice"><%= notice %></p>
 
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+
+
 <div class="container">
+
   <h1>Docentes</h1>
+  <input id="myInput" type="text" placeholder="Search..">
+<br><br>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -17,7 +36,7 @@
       <th colspan="3"></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable">
       <tr>
       <% @docentes.each do |docente| %>
         <tr>
@@ -27,7 +46,6 @@
           <td><%= docente.ci %></td>
           <td><%= docente.whatsapp %></td>
           <td><%= docente.telefonofijo %></td>
-          <td><%= docente.area %></td>
           <td><%= docente.sexo %></td>
           <td><%= docente.nacionalidad %></td>
           <td><%= docente.estado %></td>

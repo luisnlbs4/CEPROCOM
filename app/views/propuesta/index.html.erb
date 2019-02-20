@@ -31,7 +31,16 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+  <script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
   <tbody>
     <% @propuesta.each do |propuestum| %>
       <tr>
@@ -67,5 +76,7 @@
 </table>
 
 <br>
+
+
 
 <%= link_to 'New Propuestum', new_propuestum_path %>
