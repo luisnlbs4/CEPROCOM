@@ -11,297 +11,368 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nombre %>
-    <%= form.text_field :nombre %>
-  </div>
+  <h1>Nuevo Docente</h1>
+  <table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+          <div class="field">
+            <td><%= form.label :nombre %></td>
+            <td><%= form.text_field :nombre %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :ci %></td>
+            <td><%= form.text_field :ci %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :apellidopaterno %></td>
+            <td><%= form.text_field :apellidopaterno %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :apellidomaterno %></td>
+            <td><%= form.text_field :apellidomaterno %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :whatsapp %></td>
+            <td><%= form.text_field :whatsapp %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :telefonofijo %></td>
+            <td><%= form.text_field :telefonofijo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :area %></td>
+            <td><%= form.text_field :area %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :sexo %></td>
+            <td><%= form.text_field :sexo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :nacionalidad %></td>
+            <td><%= form.text_field :nacionalidad %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :profesion %></td>
+            <td><%= form.text_field :profesion %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :acercade %></td>
+            <td><%= form.text_area :acercade %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :referencias %></td>
+            <td><%= form.text_field :referencias %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :titulo %></td>
+            <td><%= form.text_field :titulo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :lugardenacimiento %></td>
+            <td><%= form.text_field :lugardenacimiento %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :estadocivil %></td>
+            <td><%= form.text_field :estadocivil %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :foto %></td>
+            <td><%= form.text_field :foto %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :salarioporhora %></td>
+            <td><%= form.text_field :salarioporhora %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :observaciones %></td>
+            <td><%= form.text_area :observaciones %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :fechaingreso %></td>
+            <td><%= form.date_select :fechaingreso %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :sueldobasico %></td>
+            <td><%= form.text_field :sueldobasico %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :modalidadcontrato %></td>
+            <td><%= form.text_field :modalidadcontrato %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :fechafinalizacion %></td>
+            <td><%= form.date_select :fechafinalizacion %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :lunes %></td>
+            <td><%= form.check_box :lunes %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :martes %></td>
+            <td><%= form.check_box :martes %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :miercoles %></td>
+            <td><%= form.check_box :miercoles %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :jueves %></td>
+            <td><%= form.check_box :jueves %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :viernes %></td>
+            <td><%= form.check_box :viernes %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :sabado %></td>
+            <td><%= form.check_box :sabado %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :domingo %></td>
+            <td><%= form.check_box :domingo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :horariodetrabajo %></td>
+            <td><%= form.text_field :horariodetrabajo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :horaspordia %></td>
+            <td><%= form.number_field :horaspordia %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :formadepago %></td>
+            <td><%= form.text_field :formadepago %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :nombrebanco %></td>
+            <td><%= form.text_field :nombrebanco %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentabancaria %></td>
+            <td><%= form.text_field :cuentabancaria %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :ci %></td>
+            <td><%= form.text_field :ci %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :bonodetransporte %></td>
+            <td><%= form.text_field :bonodetransporte %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :bonodedesempeno %></td>
+            <td><%= form.text_field :bonodedesempeno %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :bonodeantiguedad %></td>
+            <td><%= form.text_field :bonodeantiguedad %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :otrosbonos %></td>
+            <td><%= form.text_field :otrosbonos %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :costoporhoraextra %></td>
+            <td><%= form.text_field :costoporhoraextra %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :costoporhora %></td>
+            <td><%= form.text_field :costoporhora %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :facebook %></td>
+            <td><%= form.text_field :facebook %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :skype %></td>
+            <td><%= form.text_field :skype %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :twitter %></td>
+            <td><%= form.text_field :twitter %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :linkedin %></td>
+            <td><%= form.text_field :linkedin %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :medioatencion %></td>
+            <td><%= form.text_field :medioatencion %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :faseCRM %></td>
+            <td><%= form.text_field :faseCRM %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :urlcurriculum %></td>
+            <td><%= form.text_field :urlcurriculum %></td>
+          </div>
+      <tr>
+          <div class="field">
+            <td><%= form.label :urlcontrato %></td>
+            <td><%= form.text_field :urlcontrato %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentasueldopp %></td>
+            <td><%= form.number_field :cuentasueldopp %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentasueldopagado %></td>
+            <td><%= form.number_field :cuentasueldopagado %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentasueldoanticip %></td>
+            <td><%= form.number_field :cuentasueldoanticip %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentaprevaguinaldo %></td>
+            <td><%= form.number_field :cuentaprevaguinaldo %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentaporinformar %></td>
+            <td><%= form.number_field :cuentaporinformar %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentaporcobrar %></td>
+            <td><%= form.number_field :cuentaporcobrar %></td>
+          </div>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentaporpagar %></td>
+            <td><%= form.number_field :cuentaporpagar %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentaliquidacion %></td>
+            <td><%= form.number_field :cuentaliquidacion %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :cuentavacaciones %></td>
+            <td><%= form.number_field :cuentavacaciones %></td>
+          </div>
+      </tr>
+      <tr>
+          <div class="field">
+            <td><%= form.label :estado %></td>
+            <td><%= form.check_box :estado %></td>
+          </div>
+      </tr>
+    </tbody>
+  </table>
 
-  <div class="field">
-    <%= form.label :ci %>
-    <%= form.text_field :ci %>
-  </div>
+<div class="actions">
+<%= form.submit id="Aceptar" %>
+</div>
 
-  <div class="field">
-    <%= form.label :apellidopaterno %>
-    <%= form.text_field :apellidopaterno %>
-  </div>
-
-  <div class="field">
-    <%= form.label :apellidomaterno %>
-    <%= form.text_field :apellidomaterno %>
-  </div>
-
-  <div class="field">
-    <%= form.label :whatsapp %>
-    <%= form.text_field :whatsapp %>
-  </div>
-
-  <div class="field">
-    <%= form.label :telefonofijo %>
-    <%= form.text_field :telefonofijo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :area %>
-    <%= form.text_field :area %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sexo %>
-    <%= form.text_field :sexo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nacionalidad %>
-    <%= form.text_field :nacionalidad %>
-  </div>
-
-  <div class="field">
-    <%= form.label :profesion %>
-    <%= form.text_field :profesion %>
-  </div>
-
-  <div class="field">
-    <%= form.label :acercade %>
-    <%= form.text_area :acercade %>
-  </div>
-
-  <div class="field">
-    <%= form.label :referencias %>
-    <%= form.text_field :referencias %>
-  </div>
-
-  <div class="field">
-    <%= form.label :titulo %>
-    <%= form.text_field :titulo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :lugardenacimiento %>
-    <%= form.text_field :lugardenacimiento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :estadocivil %>
-    <%= form.text_field :estadocivil %>
-  </div>
-
-  <div class="field">
-    <%= form.label :foto %>
-    <%= form.text_field :foto %>
-  </div>
-
-  <div class="field">
-    <%= form.label :salarioporhora %>
-    <%= form.text_field :salarioporhora %>
-  </div>
-
-  <div class="field">
-    <%= form.label :observaciones %>
-    <%= form.text_area :observaciones %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fechaingreso %>
-    <%= form.date_select :fechaingreso %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sueldobasico %>
-    <%= form.text_field :sueldobasico %>
-  </div>
-
-  <div class="field">
-    <%= form.label :modalidadcontrato %>
-    <%= form.text_field :modalidadcontrato %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fechafinalizacion %>
-    <%= form.date_select :fechafinalizacion %>
-  </div>
-
-  <div class="field">
-    <%= form.label :lunes %>
-    <%= form.check_box :lunes %>
-  </div>
-
-  <div class="field">
-    <%= form.label :martes %>
-    <%= form.check_box :martes %>
-  </div>
-
-  <div class="field">
-    <%= form.label :miercoles %>
-    <%= form.check_box :miercoles %>
-  </div>
-
-  <div class="field">
-    <%= form.label :jueves %>
-    <%= form.check_box :jueves %>
-  </div>
-
-  <div class="field">
-    <%= form.label :viernes %>
-    <%= form.check_box :viernes %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sabado %>
-    <%= form.check_box :sabado %>
-  </div>
-
-  <div class="field">
-    <%= form.label :domingo %>
-    <%= form.check_box :domingo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :horariodetrabajo %>
-    <%= form.text_field :horariodetrabajo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :horaspordia %>
-    <%= form.number_field :horaspordia %>
-  </div>
-
-  <div class="field">
-    <%= form.label :formadepago %>
-    <%= form.text_field :formadepago %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nombrebanco %>
-    <%= form.text_field :nombrebanco %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentabancaria %>
-    <%= form.text_field :cuentabancaria %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bonodetransporte %>
-    <%= form.text_field :bonodetransporte %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bonodedesempeno %>
-    <%= form.text_field :bonodedesempeno %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bonodeantiguedad %>
-    <%= form.text_field :bonodeantiguedad %>
-  </div>
-
-  <div class="field">
-    <%= form.label :otrosbonos %>
-    <%= form.text_field :otrosbonos %>
-  </div>
-
-  <div class="field">
-    <%= form.label :costoporhoraextra %>
-    <%= form.text_field :costoporhoraextra %>
-  </div>
-
-  <div class="field">
-    <%= form.label :costoporhora %>
-    <%= form.text_field :costoporhora %>
-  </div>
-
-  <div class="field">
-    <%= form.label :facebook %>
-    <%= form.text_field :facebook %>
-  </div>
-
-  <div class="field">
-    <%= form.label :skype %>
-    <%= form.text_field :skype %>
-  </div>
-
-  <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
-  </div>
-
-  <div class="field">
-    <%= form.label :linkedin %>
-    <%= form.text_field :linkedin %>
-  </div>
-
-  <div class="field">
-    <%= form.label :medioatencion %>
-    <%= form.text_field :medioatencion %>
-  </div>
-
-  <div class="field">
-    <%= form.label :faseCRM %>
-    <%= form.text_field :faseCRM %>
-  </div>
-
-  <div class="field">
-    <%= form.label :urlcurriculum %>
-    <%= form.text_field :urlcurriculum %>
-  </div>
-
-  <div class="field">
-    <%= form.label :urlcontrato %>
-    <%= form.text_field :urlcontrato %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentasueldopp %>
-    <%= form.number_field :cuentasueldopp %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentasueldopagado %>
-    <%= form.number_field :cuentasueldopagado %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentasueldoanticip %>
-    <%= form.number_field :cuentasueldoanticip %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentaprevaguinaldo %>
-    <%= form.number_field :cuentaprevaguinaldo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentaporinformar %>
-    <%= form.number_field :cuentaporinformar %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentaporcobrar %>
-    <%= form.number_field :cuentaporcobrar %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentaporpagar %>
-    <%= form.number_field :cuentaporpagar %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentaliquidacion %>
-    <%= form.number_field :cuentaliquidacion %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cuentavacaciones %>
-    <%= form.number_field :cuentavacaciones %>
-  </div>
-
-  <div class="field">
-    <%= form.label :estado %>
-    <%= form.check_box :estado %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

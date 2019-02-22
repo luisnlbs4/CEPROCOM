@@ -2319,3 +2319,631 @@ Processing by DocentesController#index as HTML
 Completed 200 OK in 245ms (Views: 201.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 15:30:20 -0400
+Started GET "/" for 127.0.0.1 at 2019-02-22 15:30:20 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DocentesController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 1257ms (Views: 1212.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (1.4ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (93.5ms)
+Completed 200 OK in 18445ms (Views: 339.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 15:30:51 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 280ms (Views: 198.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 15:38:47 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (1.1ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 289ms (Views: 244.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 15:40:09 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 334ms (Views: 280.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:40:46 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (592.1ms)
+  Rendered docentes/new.html.erb within layouts/application (774.1ms)
+Completed 200 OK in 1112ms (Views: 1043.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:45:16 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ D:/Apps/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (58.7ms)
+  Rendered docentes/new.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 673ms (Views: 506.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:47:04 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (31.8ms)
+  Rendered docentes/new.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 323ms (Views: 277.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:48:13 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (31.8ms)
+  Rendered docentes/new.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 327ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:48:16 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (34.0ms)
+  Rendered docentes/new.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 336ms (Views: 285.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:49:07 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (29.1ms)
+  Rendered docentes/new.html.erb within layouts/application (73.6ms)
+Completed 200 OK in 369ms (Views: 322.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:49:10 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (28.2ms)
+  Rendered docentes/new.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 346ms (Views: 299.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:49:43 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (30.8ms)
+  Rendered docentes/new.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 360ms (Views: 304.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:49:46 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (27.2ms)
+  Rendered docentes/new.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 332ms (Views: 285.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:51:29 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.6ms)
+  Rendered docentes/new.html.erb within layouts/application (78.8ms)
+Completed 200 OK in 421ms (Views: 310.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:51:50 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (28.7ms)
+  Rendered docentes/new.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 392ms (Views: 338.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:52:38 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (31.3ms)
+  Rendered docentes/new.html.erb within layouts/application (77.5ms)
+Completed 200 OK in 368ms (Views: 322.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:53:34 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.0ms)
+  Rendered docentes/new.html.erb within layouts/application (81.6ms)
+Completed 200 OK in 454ms (Views: 385.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:57:07 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (39.2ms)
+  Rendered docentes/new.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 421ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:58:42 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (48.0ms)
+  Rendered docentes/new.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 456ms (Views: 402.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 15:59:58 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (30.6ms)
+  Rendered docentes/new.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 504ms (Views: 386.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 16:00:28 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (31.8ms)
+  Rendered docentes/new.html.erb within layouts/application (110.5ms)
+Completed 200 OK in 369ms (Views: 326.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 16:02:17 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (36.5ms)
+  Rendered docentes/new.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 327ms (Views: 280.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 16:08:23 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (41.2ms)
+  Rendered docentes/new.html.erb within layouts/application (89.4ms)
+Completed 200 OK in 415ms (Views: 322.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:18:53 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (761.5ms)
+  Rendered docentes/new.html.erb within layouts/application (836.7ms)
+Completed 500 Internal Server Error in 1027ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `martes' for #<#<Class:0x5b14ca8>:0xa1ba880>):
+    171:       <tr>
+    172:           <div class="field">
+    173:             <td><%= form.label :martes %></td>
+    174:             <td><%= form.check_box martes %></td>
+    175:           </div>
+    176:       </tr>
+    177:       <tr>
+  
+app/views/docentes/_form.html.erb:174:in `block in _app_views_docentes__form_html_erb__995839992_84572412'
+app/views/docentes/_form.html.erb:1:in `_app_views_docentes__form_html_erb__995839992_84572412'
+app/views/docentes/new.html.erb:3:in `_app_views_docentes_new_html_erb__1046986242_84794424'
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:19:32 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (40.5ms)
+  Rendered docentes/new.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 398ms (Views: 346.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:21:10 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (38.1ms)
+  Rendered docentes/new.html.erb within layouts/application (125.6ms)
+Completed 200 OK in 409ms (Views: 344.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:21:53 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (28.4ms)
+  Rendered docentes/new.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 407ms (Views: 338.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:22:33 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (37.9ms)
+  Rendered docentes/new.html.erb within layouts/application (90.7ms)
+Completed 200 OK in 411ms (Views: 326.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:23:22 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (42.5ms)
+  Rendered docentes/new.html.erb within layouts/application (88.6ms)
+Completed 200 OK in 479ms (Views: 385.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:24:17 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (34.3ms)
+  Rendered docentes/new.html.erb within layouts/application (84.4ms)
+Completed 200 OK in 357ms (Views: 303.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:24:25 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (38.7ms)
+  Rendered docentes/new.html.erb within layouts/application (91.6ms)
+Completed 200 OK in 379ms (Views: 325.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:24:45 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (38.4ms)
+  Rendered docentes/new.html.erb within layouts/application (90.8ms)
+Completed 200 OK in 386ms (Views: 330.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:24:56 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (32.5ms)
+  Rendered docentes/new.html.erb within layouts/application (86.3ms)
+Completed 200 OK in 373ms (Views: 320.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:25:04 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (34.4ms)
+  Rendered docentes/new.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 374ms (Views: 314.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:25:24 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (30.1ms)
+  Rendered docentes/new.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 410ms (Views: 354.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:25:46 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.1ms)
+  Rendered docentes/new.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 414ms (Views: 355.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:28:18 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (31.1ms)
+  Rendered docentes/new.html.erb within layouts/application (77.8ms)
+Completed 200 OK in 432ms (Views: 362.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/docentes" for 127.0.0.1 at 2019-02-22 17:28:34 -0400
+Processing by DocentesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qEeFnlzZDyv6VIIwp1cUDkplZitPoltav4M+FwIWst2CB6klRwhHJH9eWau31vLuWJiZE7RivzksuQTR4zUpsQ==", "docente"=>{"nombre"=>"asasasasas", "ci"=>"", "apellidopaterno"=>"asasasa", "apellidomaterno"=>"", "whatsapp"=>"", "telefonofijo"=>"", "area"=>"", "sexo"=>"sasasas", "nacionalidad"=>"", "profesion"=>"", "acercade"=>"", "referencias"=>"", "titulo"=>"", "lugardenacimiento"=>"", "estadocivil"=>"", "foto"=>"", "salarioporhora"=>"", "observaciones"=>"", "fechaingreso(1i)"=>"2019", "fechaingreso(2i)"=>"2", "fechaingreso(3i)"=>"22", "sueldobasico"=>"", "modalidadcontrato"=>"", "fechafinalizacion(1i)"=>"2019", "fechafinalizacion(2i)"=>"2", "fechafinalizacion(3i)"=>"22", "lunes"=>"0", "martes"=>"0", "miercoles"=>"0", "jueves"=>"0", "viernes"=>"0", "sabado"=>"0", "domingo"=>"0", "horariodetrabajo"=>"", "horaspordia"=>"", "formadepago"=>"", "nombrebanco"=>"", "cuentabancaria"=>"", "bonodetransporte"=>"", "bonodedesempeno"=>"", "bonodeantiguedad"=>"", "otrosbonos"=>"", "costoporhoraextra"=>"", "costoporhora"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatencion"=>"", "faseCRM"=>"", "urlcurriculum"=>"", "urlcontrato"=>"", "cuentasueldopp"=>"", "cuentasueldopagado"=>"", "cuentasueldoanticip"=>"", "cuentaprevaguinaldo"=>"", "cuentaporinformar"=>"", "cuentaporcobrar"=>"", "cuentaporpagar"=>"", "cuentaliquidacion"=>"", "cuentavacaciones"=>"", "estado"=>"0"}, "commit"=>"Create Docente"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[36mDocente Create (2.1ms)[0m  [1m[32mINSERT INTO "docentes" ("nombre", "ci", "apellidopaterno", "apellidomaterno", "whatsapp", "telefonofijo", "area", "sexo", "nacionalidad", "profesion", "acercade", "referencias", "titulo", "lugardenacimiento", "estadocivil", "foto", "observaciones", "fechaingreso", "modalidadcontrato", "fechafinalizacion", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo", "horariodetrabajo", "formadepago", "nombrebanco", "cuentabancaria", "facebook", "skype", "twitter", "linkedin", "medioatencion", "faseCRM", "urlcurriculum", "urlcontrato", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "asasasasas"], ["ci", ""], ["apellidopaterno", "asasasa"], ["apellidomaterno", ""], ["whatsapp", ""], ["telefonofijo", ""], ["area", ""], ["sexo", "sasasas"], ["nacionalidad", ""], ["profesion", ""], ["acercade", ""], ["referencias", ""], ["titulo", ""], ["lugardenacimiento", ""], ["estadocivil", ""], ["foto", ""], ["observaciones", ""], ["fechaingreso", "2019-02-22"], ["modalidadcontrato", ""], ["fechafinalizacion", "2019-02-22"], ["lunes", 0], ["martes", 0], ["miercoles", 0], ["jueves", 0], ["viernes", 0], ["sabado", 0], ["domingo", 0], ["horariodetrabajo", ""], ["formadepago", ""], ["nombrebanco", ""], ["cuentabancaria", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatencion", ""], ["faseCRM", ""], ["urlcurriculum", ""], ["urlcontrato", ""], ["estado", 0], ["created_at", "2019-02-22 21:28:34.878683"], ["updated_at", "2019-02-22 21:28:34.878683"]]
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+Redirected to http://localhost:3000/docentes/3
+Completed 302 Found in 31ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/docentes/3" for 127.0.0.1 at 2019-02-22 17:28:34 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 402ms (Views: 294.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:28:38 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 329ms (Views: 270.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/docentes/3/edit" for 127.0.0.1 at 2019-02-22 17:28:43 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (50.6ms)
+  Rendered docentes/edit.html.erb within layouts/application (108.8ms)
+Completed 200 OK in 416ms (Views: 358.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes/3" for 127.0.0.1 at 2019-02-22 17:28:49 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 287ms (Views: 238.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:28:52 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.9ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 300ms (Views: 254.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docentes/3/edit" for 127.0.0.1 at 2019-02-22 17:29:05 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocente Load (0.4ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (29.5ms)
+  Rendered docentes/edit.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 476ms (Views: 426.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docentes/3" for 127.0.0.1 at 2019-02-22 17:29:09 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 291ms (Views: 237.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:29:13 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 307ms (Views: 252.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:29:57 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.7ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 248ms (Views: 196.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:30:04 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.8ms)
+  Rendered docentes/new.html.erb within layouts/application (103.2ms)
+Completed 200 OK in 421ms (Views: 371.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/docentes" for 127.0.0.1 at 2019-02-22 17:30:07 -0400
+Processing by DocentesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8Hz79hLliHutop9Z6mRKXfoat71smuUZs034IQ7IFvmyyTiRhc1pJynp561jzenz3d9JtDGqLlA3ZeG/M731w==", "docente"=>{"nombre"=>"", "ci"=>"", "apellidopaterno"=>"", "apellidomaterno"=>"", "whatsapp"=>"", "telefonofijo"=>"", "area"=>"", "sexo"=>"", "nacionalidad"=>"", "profesion"=>"", "acercade"=>"", "referencias"=>"", "titulo"=>"", "lugardenacimiento"=>"", "estadocivil"=>"", "foto"=>"", "salarioporhora"=>"", "observaciones"=>"", "fechaingreso(1i)"=>"2019", "fechaingreso(2i)"=>"2", "fechaingreso(3i)"=>"22", "sueldobasico"=>"", "modalidadcontrato"=>"", "fechafinalizacion(1i)"=>"2019", "fechafinalizacion(2i)"=>"2", "fechafinalizacion(3i)"=>"22", "lunes"=>"0", "martes"=>"0", "miercoles"=>"0", "jueves"=>"0", "viernes"=>"0", "sabado"=>"0", "domingo"=>"0", "horariodetrabajo"=>"", "horaspordia"=>"", "formadepago"=>"", "nombrebanco"=>"", "cuentabancaria"=>"", "bonodetransporte"=>"", "bonodedesempeno"=>"", "bonodeantiguedad"=>"", "otrosbonos"=>"", "costoporhoraextra"=>"", "costoporhora"=>"", "facebook"=>"", "skype"=>"", "twitter"=>"", "linkedin"=>"", "medioatencion"=>"", "faseCRM"=>"", "urlcurriculum"=>"", "urlcontrato"=>"", "cuentasueldopp"=>"", "cuentasueldopagado"=>"", "cuentasueldoanticip"=>"", "cuentaprevaguinaldo"=>"", "cuentaporinformar"=>"", "cuentaporcobrar"=>"", "cuentaporpagar"=>"", "cuentaliquidacion"=>"", "cuentavacaciones"=>"", "estado"=>"0"}, "commit"=>"Crear Docente"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[36mDocente Create (3.4ms)[0m  [1m[32mINSERT INTO "docentes" ("nombre", "ci", "apellidopaterno", "apellidomaterno", "whatsapp", "telefonofijo", "area", "sexo", "nacionalidad", "profesion", "acercade", "referencias", "titulo", "lugardenacimiento", "estadocivil", "foto", "observaciones", "fechaingreso", "modalidadcontrato", "fechafinalizacion", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo", "horariodetrabajo", "formadepago", "nombrebanco", "cuentabancaria", "facebook", "skype", "twitter", "linkedin", "medioatencion", "faseCRM", "urlcurriculum", "urlcontrato", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", ""], ["ci", ""], ["apellidopaterno", ""], ["apellidomaterno", ""], ["whatsapp", ""], ["telefonofijo", ""], ["area", ""], ["sexo", ""], ["nacionalidad", ""], ["profesion", ""], ["acercade", ""], ["referencias", ""], ["titulo", ""], ["lugardenacimiento", ""], ["estadocivil", ""], ["foto", ""], ["observaciones", ""], ["fechaingreso", "2019-02-22"], ["modalidadcontrato", ""], ["fechafinalizacion", "2019-02-22"], ["lunes", 0], ["martes", 0], ["miercoles", 0], ["jueves", 0], ["viernes", 0], ["sabado", 0], ["domingo", 0], ["horariodetrabajo", ""], ["formadepago", ""], ["nombrebanco", ""], ["cuentabancaria", ""], ["facebook", ""], ["skype", ""], ["twitter", ""], ["linkedin", ""], ["medioatencion", ""], ["faseCRM", ""], ["urlcurriculum", ""], ["urlcontrato", ""], ["estado", 0], ["created_at", "2019-02-22 21:30:07.889279"], ["updated_at", "2019-02-22 21:30:07.889279"]]
+  ↳ app/controllers/docentes_controller.rb:30
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:30
+Redirected to http://localhost:3000/docentes/4
+Completed 302 Found in 38ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/docentes/4" for 127.0.0.1 at 2019-02-22 17:30:07 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDocente Load (0.3ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 331ms (Views: 242.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:30:11 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 324ms (Views: 271.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/docentes/4" for 127.0.0.1 at 2019-02-22 17:30:19 -0400
+Processing by DocentesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"083X2Ek7y5cl5aoosp34EVHBSj1R9+ctwo2iZCcaFtT5jftjUuqDmKDvcbOiHB7xQzy1Bao3A05Rt5iixjmNuA==", "id"=>"4"}
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:57
+  [1m[36mDocente Destroy (3.2ms)[0m  [1m[31mDELETE FROM "docentes" WHERE "docentes"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/docentes_controller.rb:57
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:57
+Redirected to http://localhost:3000/docentes
+Completed 302 Found in 31ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:30:20 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 325ms (Views: 274.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:31:13 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 280ms (Views: 234.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes/1/edit" for 127.0.0.1 at 2019-02-22 17:31:16 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (33.6ms)
+  Rendered docentes/edit.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 409ms (Views: 355.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:31:23 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (27.3ms)
+  Rendered docentes/new.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 377ms (Views: 328.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:31:51 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 278ms (Views: 231.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:31:57 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.8ms)
+  Rendered docentes/new.html.erb within layouts/application (87.7ms)
+Completed 200 OK in 402ms (Views: 343.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:32:10 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (39.9ms)
+  Rendered docentes/new.html.erb within layouts/application (83.5ms)
+Completed 200 OK in 426ms (Views: 373.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/docentes/1/edit" for 127.0.0.1 at 2019-02-22 17:32:35 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.6ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (33.3ms)
+  Rendered docentes/edit.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 390ms (Views: 316.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docentes/1" for 127.0.0.1 at 2019-02-22 17:32:38 -0400
+Processing by DocentesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.4ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/show.html.erb within layouts/application
+  Rendered docentes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 300ms (Views: 250.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docentes/1/edit" for 127.0.0.1 at 2019-02-22 17:32:49 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.4ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (37.9ms)
+  Rendered docentes/edit.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 353ms (Views: 297.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docentes/1/edit" for 127.0.0.1 at 2019-02-22 17:34:24 -0400
+Processing by DocentesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  Rendering docentes/edit.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (35.2ms)
+  Rendered docentes/edit.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 419ms (Views: 366.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:34:31 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (0.8ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 291ms (Views: 231.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/docentes/1" for 127.0.0.1 at 2019-02-22 17:35:20 -0400
+Processing by DocentesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M9RpAZ6HqhWHPf5/ciUUPHXo0vxRsd+/9zDNb37m0acZlEW6hVbiGgI3JeRipPLcZxUtxKpxO9xkCvepn8VKyw==", "id"=>"1"}
+  [1m[36mDocente Load (0.5ms)[0m  [1m[34mSELECT  "docentes".* FROM "docentes" WHERE "docentes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/docentes_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/docentes_controller.rb:57
+  [1m[36mDocente Destroy (3.3ms)[0m  [1m[31mDELETE FROM "docentes" WHERE "docentes"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/docentes_controller.rb:57
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/docentes_controller.rb:57
+Redirected to http://localhost:3000/docentes
+Completed 302 Found in 27ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/docentes" for 127.0.0.1 at 2019-02-22 17:35:20 -0400
+Processing by DocentesController#index as HTML
+  Rendering docentes/index.html.erb within layouts/application
+  [1m[36mDocente Load (1.0ms)[0m  [1m[34mSELECT "docentes".* FROM "docentes"[0m
+  ↳ app/views/docentes/index.html.erb:41
+  Rendered docentes/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 317ms (Views: 263.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/docentes/new" for 127.0.0.1 at 2019-02-22 17:37:31 -0400
+Processing by DocentesController#new as HTML
+  Rendering docentes/new.html.erb within layouts/application
+  Rendered docentes/_form.html.erb (29.0ms)
+  Rendered docentes/new.html.erb within layouts/application (124.2ms)
+Completed 200 OK in 452ms (Views: 372.9ms | ActiveRecord: 0.0ms)
+
+
